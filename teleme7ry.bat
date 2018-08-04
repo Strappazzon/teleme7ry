@@ -1,24 +1,41 @@
 @echo off
 title Teleme7ry
-color 3f
+:admin
+echo.
+echo Teleme7ry is detecting permissions...
+ping 127.0.0.1 -n 3 > nul
+net session >nul 2>&1
+if %errorLevel% == 0 (
+goto home
+) else (
+goto error
+)
+goto admin
+:error
+cls
+color 4f
+echo.
+echo ERROR: Teleme7ry needs elevated privileges in order to make changes to your system.
+timeout /t -1
+exit
 :home
 cls
+color 3f
 echo.
 echo * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 echo *                                                     *
 echo * WELCOME TO TELEME7RY                                *
 echo *                                                     *
 echo * Author: Strappazzon                                 *
-echo * Version: v1.0                                       *
+echo * Version: v1.1                                       *
 echo * Source: https://github.com/Strappazzon/teleme7ry    *
 echo *                                                     *
 echo * This script will disable telemetry in Windows 7     *
 echo *                                                     *
 echo * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 echo.
-echo Before proceeding make sure that this CMD has admin privileges and
-echo Windows Update DOES NOT install updates automatically. The following actions
-echo will be performed:
+echo Before proceeding make sure that Windows Update DOES NOT install updates automatically.
+echo The following actions will be performed:
 echo.
 echo - (Optional) A restore point will be created
 echo - The tasks related to telemetry will be stopped and deleted
@@ -33,7 +50,7 @@ goto home
 :restore
 cls
 echo.
-echo TELEME7RY V1.0 IS RUNNING, PLEASE WAIT...
+echo TELEME7RY V1.1 IS RUNNING, PLEASE WAIT...
 echo =========================================
 ping 127.0.0.1 -n 2 > nul
 echo.
