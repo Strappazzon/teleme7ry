@@ -6,11 +6,11 @@ This is a guide on how to remove the leftovers, so follow the steps below **afte
 Credits:
 - https://superuser.com/a/972506
 - https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/
-- https://deskroll.com/blog/article.php?id=Privacy_In_Windows_8.1_%E2%80%93_How_To_Disable_Telemetry_Data_Collection
+- https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection
 
 ## Task Scheduler
 Press **Win + R**, type in `taskschd.msc` and hit enter. The Task Scheduler Library will show up.
-Expand all the subfolders until **Windows**, now *disable* and *delete* (via right-click) the following tasks:
+Expand **Task Scheduler Library > Microsoft > Windows**, now *disable* or *delete* (via right-click) the following tasks:
 
 - Everything under "*Application Experience*"
 - Everything under "*Autochk*"
@@ -19,6 +19,15 @@ Expand all the subfolders until **Windows**, now *disable* and *delete* (via rig
 	- "*Microsoft-Windows-DiskDiagnosticDataCollector*"
 - Under "*Maintenance*"
 	- "*WinSAT*"
+- Under "*CloudExperienceHost*"
+	- "*CreateObjectTask*"
+- Under "*NetTrace*"
+	- "*GatherNetworkInfo*"
+- Under "*Shell*"
+	- "*FamilySafetyMonitor*"
+	- "*FamilySafetyRefresh*"
+- Under "*IME*"
+	- "*SQM data sender*"
 
 ## Services
 Press **Win + R**, type in `services.msc` and hit enter. The Services list will show up.
