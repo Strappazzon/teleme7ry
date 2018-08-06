@@ -29,12 +29,6 @@ Expand **Task Scheduler Library > Microsoft > Windows**, now *disable* or *delet
 - Under "*IME*"
 	- "*SQM data sender*"
 
-## Services
-Press **Win + R**, type in `services.msc` and hit enter. The Services list will show up.
-Look for the service named "**Remote Registry**". Right-click on it, select **Properties** and change its startup type from *Manual* to *Disabled*.
-
-![Remote Registry](https://puu.sh/B6ZSw.png)
-
 ## Windows Update
 Press **Win + R**, type in `control` and hit enter. The Control Panel will show up.
 Navigate to **System and Security** > **Windows Update** and hide the following updates under Important and Optional updates:
@@ -58,4 +52,4 @@ Navigate to **System and Security** > **Windows Update** and hide the following 
 - **KB3123862** Updated capabilities to upgrade Windows 8.1 and Windows 7
 - **KB971033** Description of the update for Windows Activation Technologies
 
-![Hide Updates](https://puu.sh/B6ZSt.png)
+![Hide Updates](https://linx.li/selif/bv07i1ob.png)

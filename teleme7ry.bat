@@ -27,7 +27,7 @@ echo *                                                     *
 echo * WELCOME TO TELEME7RY                                *
 echo *                                                     *
 echo * Author: Strappazzon                                 *
-echo * Version: v1.1                                       *
+echo * Version: v1.2                                       *
 echo * Source: https://github.com/Strappazzon/teleme7ry    *
 echo *                                                     *
 echo * This script will disable telemetry in Windows 7     *
@@ -50,7 +50,7 @@ goto home
 :restore
 cls
 echo.
-echo TELEME7RY V1.1 IS RUNNING, PLEASE WAIT...
+echo TELEME7RY V1.2 IS RUNNING, PLEASE WAIT...
 echo =========================================
 ping 127.0.0.1 -n 2 > nul
 echo.
@@ -61,10 +61,11 @@ timeout /t -1
 goto start
 :start
 echo.
-echo STOPPING AND DELETING THE TASKS...
+echo STOPPING AND DELETING THE SERVICES...
 echo =========================================
 sc stop DiagTrack
 sc stop dmwappushservice
+sc stop RemoteRegistry
 ping 127.0.0.1 -n 1 > nul
 sc delete DiagTrack
 sc delete dmwappushservice
