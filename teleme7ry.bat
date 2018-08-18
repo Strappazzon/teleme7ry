@@ -1,15 +1,14 @@
 @echo off
+:init
 title Teleme7ry
+set scriptver=1.3
+goto admin
 :admin
 echo.
 echo Teleme7ry is detecting permissions...
 ping 127.0.0.1 -n 3 > nul
 net session >nul 2>&1
-if %errorLevel% == 0 (
-goto home
-) else (
-goto error
-)
+if %errorLevel% == 0 (goto home) else (goto error)
 goto admin
 :error
 cls
@@ -27,7 +26,7 @@ echo *                                                     *
 echo * WELCOME TO TELEME7RY                                *
 echo *                                                     *
 echo * Author: Strappazzon                                 *
-echo * Version: v1.2                                       *
+echo * Version: v%scriptver%                                       *
 echo * Source: https://github.com/Strappazzon/teleme7ry    *
 echo *                                                     *
 echo * This script will disable telemetry in Windows 7     *
@@ -38,7 +37,8 @@ echo Before proceeding make sure that Windows Update DOES NOT install updates au
 echo The following actions will be performed:
 echo.
 echo - (Optional) A restore point will be created
-echo - The tasks related to telemetry will be stopped and deleted
+echo - The services related to telemetry will be stopped and deleted
+echo - The tasks related to telemetry will be deleted
 echo - The updates related to telemetry will be uninstalled
 echo - The domains\IPs used for telemetry will be blocked
 echo - (Prompt) Your computer will be restarted
@@ -49,8 +49,9 @@ if "%tel%"=="Y" goto restore
 goto home
 :restore
 cls
+color 07
 echo.
-echo TELEME7RY V1.2 IS RUNNING, PLEASE WAIT...
+echo TELEME7RY V%scriptver% IS RUNNING, PLEASE WAIT...
 echo =========================================
 ping 127.0.0.1 -n 2 > nul
 echo.
@@ -71,6 +72,26 @@ sc delete DiagTrack
 sc delete dmwappushservice
 ping 127.0.0.1 -n 1 > nul
 echo "" > C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
+echo.
+echo.
+echo DELETING THE TASKS...
+echo =========================================
+schtasks /delete /tn "\Microsoft\Windows\Application Experience\AitAgent" /f
+schtasks /delete /tn "\Microsoft\Windows\Application Experience\Microsoft Compatibility Appraiser" /f
+schtasks /delete /tn "\Microsoft\Windows\Application Experience\ProgramDataUpdater" /f
+schtasks /delete /tn "\Microsoft\Windows\Autochk\Proxy" /f
+schtasks /delete /tn "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator" /f
+schtasks /delete /tn "\Microsoft\Windows\Customer Experience Improvement Program\KernelCeipTask" /f
+schtasks /delete /tn "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip" /f
+schtasks /delete /tn "\Microsoft\Windows\DiskDiagnostic\Microsoft-Windows-DiskDiagnosticDataCollector" /f
+schtasks /delete /tn "\Microsoft\Windows\Maintenance\WinSAT" /f
+schtasks /delete /tn "\Microsoft\Windows\CloudExperienceHost\CreateObjectTask" /f
+schtasks /delete /tn "\Microsoft\Windows\NetTrace\GatherNetworkInfo" /f
+schtasks /delete /tn "\Microsoft\Windows\Shell\FamilySafetyMonitor" /f
+schtasks /delete /tn "\Microsoft\Windows\Shell\FamilySafetyRefresh" /f
+schtasks /delete /tn "\Microsoft\Windows\IME\SQM data sender" /f
+echo.
+echo Operation completed.
 echo.
 echo UNINSTALLING THE UPDATES...
 echo This will take a while, please wait.
@@ -540,19 +561,20 @@ ipconfig /flushdns
 timeout /t -1
 :end
 cls
+color 3f
 echo.
 echo TELEME7RY HAS COMPLETED ALL THE TASKS.
 echo =========================================
 echo To continue choose what you want to do now:
 echo.
+echo GITHUB: (Recommended) See additional instructions to remove any leftovers
 echo RESTART: (Recommended) Restarts the computer
 echo QUIT: (Not recommended) Quits the script without restarting the computer
-echo GITHUB: (Internet) See additional instructions to remove any leftovers
 echo.
 set /p end=TYPE AN OPTION: 
+if "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry/blob/master/README.md#teleme7ry
 if "%end%"=="RESTART" goto restart
 if "%end%"=="QUIT" goto norestart
-if "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry
 goto end
 :restart
 cls

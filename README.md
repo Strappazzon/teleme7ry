@@ -8,9 +8,9 @@ Credits:
 - https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/
 - https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection
 
-## Task Scheduler
+## Check Task Scheduler
 Press **Win + R**, type in `taskschd.msc` and hit enter. The Task Scheduler Library will show up.
-Expand **Task Scheduler Library > Microsoft > Windows**, now *disable* or *delete* (via right-click) the following tasks:
+Expand **Task Scheduler Library > Microsoft > Windows**. If there are any of the following tasks, *delete* them.
 
 - Everything under "*Application Experience*"
 - Everything under "*Autochk*"
@@ -29,9 +29,9 @@ Expand **Task Scheduler Library > Microsoft > Windows**, now *disable* or *delet
 - Under "*IME*"
 	- "*SQM data sender*"
 
-## Windows Update
+## Hide the uninstalled Updates
 Press **Win + R**, type in `control` and hit enter. The Control Panel will show up.
-Navigate to **System and Security** > **Windows Update** and hide the following updates under Important and Optional updates:
+Navigate to **System and Security** > **Windows Update** and hide the following updates under **Important** and **Optional**:
 
 - **KB3083324** Windows Update Client for Windows 7 and Windows Server 2008 R2: September 2015
 - **KB3065987** Windows Update Client for Windows 7 and Windows Server 2008 R2: July 2015
@@ -52,4 +52,4 @@ Navigate to **System and Security** > **Windows Update** and hide the following 
 - **KB3123862** Updated capabilities to upgrade Windows 8.1 and Windows 7
 - **KB971033** Description of the update for Windows Activation Technologies
 
-![Hide Updates](https://linx.li/selif/bv07i1ob.png)
+![Hide Updates](https://linx.li/selif/hideupdates.png)
