@@ -1,12 +1,31 @@
 @echo off
 :init
-title Teleme7ry
-set scriptver=1.3
-goto admin
+set name=Teleme7ry
+set namecap=TELEME7RY
+set scriptver=1.4
+title %name%
+goto checksystem
+:checksystem
+cls
+echo.
+echo Checking operating system...
+ping 127.0.0.1 -n 2 > nul
+net session >nul 2>&1
+setlocal
+for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i.%%j
+if "%version%" == "6.1" (goto admin) else (goto incompatible)
+endlocal
+:incompatible
+cls
+color 4f
+echo.
+echo ERROR: This operating system is not compatible with this tool.
+timeout /t -1
+exit
 :admin
 echo.
-echo Teleme7ry is detecting permissions...
-ping 127.0.0.1 -n 3 > nul
+echo Checking permissions...
+ping 127.0.0.1 -n 2 > nul
 net session >nul 2>&1
 if %errorLevel% == 0 (goto home) else (goto error)
 goto admin
@@ -14,26 +33,16 @@ goto admin
 cls
 color 4f
 echo.
-echo ERROR: Teleme7ry needs elevated privileges in order to make changes to your system.
+echo ERROR: %name% needs elevated privileges in order to make changes.
 timeout /t -1
 exit
 :home
 cls
 color 3f
+echo %name% [Version: %scriptver%]
+echo This script will disable telemetry in Windows 7
 echo.
-echo * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-echo *                                                     *
-echo * WELCOME TO TELEME7RY                                *
-echo *                                                     *
-echo * Author: Strappazzon                                 *
-echo * Version: v%scriptver%                                       *
-echo * Source: https://github.com/Strappazzon/teleme7ry    *
-echo *                                                     *
-echo * This script will disable telemetry in Windows 7     *
-echo *                                                     *
-echo * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-echo.
-echo Before proceeding make sure that Windows Update DOES NOT install updates automatically.
+echo Please make sure that Windows Update DOES NOT install updates automatically.
 echo The following actions will be performed:
 echo.
 echo - (Optional) A restore point will be created
@@ -44,20 +53,20 @@ echo - The domains\IPs used for telemetry will be blocked
 echo - (Prompt) Your computer will be restarted
 echo.
 set /p tel=DO YOU WANT TO PROCEED? (Y/N): 
-if "%tel%"=="N" exit
-if "%tel%"=="Y" goto restore
+if /I "%tel%"=="N" exit
+if /I "%tel%"=="Y" goto restore
 goto home
 :restore
 cls
 color 07
 echo.
-echo TELEME7RY V%scriptver% IS RUNNING, PLEASE WAIT...
+echo %namecap% V%scriptver% IS RUNNING, PLEASE WAIT...
 echo =========================================
 ping 127.0.0.1 -n 2 > nul
 echo.
 set /p res=DO YOU WANT TO MAKE A SYSTEM RESTORE POINT? (Y/N): 
-if "%res%"=="N" goto start
-if "%res%"=="Y" wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Teleme7ry", 100, 7
+if /I "%res%"=="N" goto start
+if /I "%res%"=="Y" wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Teleme7ry", 100, 7
 timeout /t -1
 goto start
 :start
@@ -563,18 +572,18 @@ timeout /t -1
 cls
 color 3f
 echo.
-echo TELEME7RY HAS COMPLETED ALL THE TASKS.
+echo %namecap% HAS COMPLETED ALL THE TASKS.
 echo =========================================
 echo To continue choose what you want to do now:
 echo.
-echo GITHUB: (Recommended) See additional instructions to remove any leftovers
-echo RESTART: (Recommended) Restarts the computer
-echo QUIT: (Not recommended) Quits the script without restarting the computer
+echo GITHUB: (Recommended) See how to remove the leftovers (if any)
+echo RESTART: (Recommended) Restart the computer
+echo QUIT: (Not recommended) Quit the script without restarting the computer
 echo.
 set /p end=TYPE AN OPTION: 
-if "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry/blob/master/README.md#teleme7ry
-if "%end%"=="RESTART" goto restart
-if "%end%"=="QUIT" goto norestart
+if /I "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry/blob/master/README.md#teleme7ry
+if /I "%end%"=="RESTART" goto restart
+if /I "%end%"=="QUIT" goto norestart
 goto end
 :restart
 cls
