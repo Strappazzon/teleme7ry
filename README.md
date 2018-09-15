@@ -52,4 +52,4 @@ Navigate to **System and Security** > **Windows Update** and hide the following 
 - **KB3123862** Updated capabilities to upgrade Windows 8.1 and Windows 7
 - **KB971033** Description of the update for Windows Activation Technologies
 
-![Hide Updates](https://linx.li/selif/hideupdates.png)
+![Hide Updates](https://puu.sh/Bn6ke.png)
