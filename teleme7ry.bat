@@ -2,7 +2,7 @@
 :init
 set name=Teleme7ry
 set namecap=TELEME7RY
-set scriptver=1.4
+set scriptver=1.5
 title %name%
 goto checksystem
 :checksystem
@@ -105,6 +105,33 @@ echo.
 echo UNINSTALLING THE UPDATES...
 echo This will take a while, please wait.
 echo =========================================
+wusa /uninstall /kb:2922324 /quiet /norestart
+wusa /uninstall /kb:2976987 /quiet /norestart
+wusa /uninstall /kb:3012973 /quiet /norestart
+wusa /uninstall /kb:3014460 /quiet /norestart
+wusa /uninstall /kb:3015249 /quiet /norestart
+wusa /uninstall /kb:3064683 /quiet /norestart
+wusa /uninstall /kb:3068707 /quiet /norestart
+wusa /uninstall /kb:3072318 /quiet /norestart
+wusa /uninstall /kb:3080351 /quiet /norestart
+wusa /uninstall /kb:3081427 /quiet /norestart
+wusa /uninstall /kb:3081437 /quiet /norestart
+wusa /uninstall /kb:3081451 /quiet /norestart
+wusa /uninstall /kb:3081454 /quiet /norestart
+wusa /uninstall /kb:3090045 /quiet /norestart
+wusa /uninstall /kb:3095675 /quiet /norestart
+wusa /uninstall /kb:3112343 /quiet /norestart
+wusa /uninstall /kb:3124275 /quiet /norestart
+wusa /uninstall /kb:3134814 /quiet /norestart
+wusa /uninstall /kb:3135445 /quiet /norestart
+wusa /uninstall /kb:3138612 /quiet /norestart
+wusa /uninstall /kb:3138615 /quiet /norestart
+wusa /uninstall /kb:3139929 /quiet /norestart
+wusa /uninstall /kb:3140166 /quiet /norestart
+wusa /uninstall /kb:3140185 /quiet /norestart
+wusa /uninstall /kb:3146449 /quiet /norestart
+wusa /uninstall /kb:3150513 /quiet /norestart
+wusa /uninstall /kb:3173040 /quiet /norestart
 wusa /uninstall /kb:3065988 /quiet /norestart
 wusa /uninstall /kb:3083325 /quiet /norestart
 wusa /uninstall /kb:3083324 /quiet /norestart
@@ -581,12 +608,12 @@ echo RESTART: (Recommended) Restart the computer
 echo QUIT: (Not recommended) Quit the script without restarting the computer
 echo.
 set /p end=TYPE AN OPTION: 
-if /I "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry/blob/master/README.md#teleme7ry
+if /I "%end%"=="GITHUB" start https://github.com/Strappazzon/teleme7ry/blob/master/README.md#removing-any-leftovers
 if /I "%end%"=="RESTART" goto restart
 if /I "%end%"=="QUIT" goto norestart
 goto end
 :restart
 cls
-shutdown /r /c "Teleme7ry needs to restart your computer in order to complete the tasks."
+shutdown /r /c "Teleme7ry needs to restart your computer in order to complete the tasks." /t 10
 :norestart
 exit
