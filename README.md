@@ -1,9 +1,10 @@
 # TELEME7RY
+
 #### An automated batch script to disable telemetry in Windows 7
 
 Teleme7ry aims to remove any telemetry service, schedule and update in Windows 7.
 
-![](https://puu.sh/BPXHI.png)
+![Teleme7ry](.github/images/preview.png)
 
 Credits:
 - https://superuser.com/a/972506
@@ -12,9 +13,11 @@ Credits:
 - https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection
 
 ## Removing any leftovers
+
 Follow the steps below **after** running the script to make sure the script ran correctly.
 
 ### Check Task Scheduler
+
 Press **Win + R**, type in `taskschd.msc` and hit enter. The Task Scheduler Library will show up.
 Expand **Task Scheduler Library > Microsoft > Windows**. If there are any of the following tasks, *delete* them.
 
@@ -22,20 +25,21 @@ Expand **Task Scheduler Library > Microsoft > Windows**. If there are any of the
 - Everything under "*Autochk*"
 - Everything under "*Customer Experience Improvement Program*"
 - Under "*Disk Diagnostic*"
-	- "*Microsoft-Windows-DiskDiagnosticDataCollector*"
+  - "*Microsoft-Windows-DiskDiagnosticDataCollector*"
 - Under "*Maintenance*"
-	- "*WinSAT*"
+  - "*WinSAT*"
 - Under "*CloudExperienceHost*"
-	- "*CreateObjectTask*"
+  - "*CreateObjectTask*"
 - Under "*NetTrace*"
-	- "*GatherNetworkInfo*"
+  - "*GatherNetworkInfo*"
 - Under "*Shell*"
-	- "*FamilySafetyMonitor*"
-	- "*FamilySafetyRefresh*"
+  - "*FamilySafetyMonitor*"
+  - "*FamilySafetyRefresh*"
 - Under "*IME*"
-	- "*SQM data sender*"
+  - "*SQM data sender*"
 
 ### Hide the uninstalled Updates
+
 Press **Win + R**, type in `control` and hit enter. The Control Panel will show up.
 Navigate to **System and Security** > **Windows Update** and hide the following updates under **Important** and **Optional**:
 
@@ -87,7 +91,7 @@ Navigate to **System and Security** > **Windows Update** and hide the following 
 - [KB3140166](https://support.microsoft.com/en-us/kb/3140166) Windows 10 Upgrade Scheduling
 - [KB3140185](https://support.microsoft.com/en-us/kb/3140185) Windows Anytime Upgrade (WAU) update for Windows 8.1 (March 2016)
 - [KB3146449](https://support.microsoft.com/en-us/kb/3146449) "Updated Internet Explorer 11 capabilities to upgrade Windows 8.1 and Windows 7"
-- [KB3150513](https://support.microsoft.com/en-us/kb/3150513) May 2016 Compatibility Update for Windows 7, 8, 8.1,another Windows 10 Upgrade KB
+- [KB3150513](https://support.microsoft.com/en-us/kb/3150513) May 2016 Compatibility Update for Windows 7, 8, 8.1, another Windows 10 Upgrade KB
 - [KB3173040](https://support.microsoft.com/en-us/kb/3173040) Fullscreen Windows 10 nagware experience
 
-![Hide Updates](https://puu.sh/Bn6ke.png)
+![Hide Updates](.github/images/hide_updates.png)
