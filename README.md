@@ -11,6 +11,7 @@ Credits:
 - https://www.getblackbird.net/blacklist/updates/
 - https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/
 - https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection
+- https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/
 
 ## Removing any leftovers
 
@@ -93,5 +94,6 @@ Navigate to **System and Security** > **Windows Update** and hide the following 
 - [KB3146449](https://support.microsoft.com/en-us/kb/3146449) "Updated Internet Explorer 11 capabilities to upgrade Windows 8.1 and Windows 7"
 - [KB3150513](https://support.microsoft.com/en-us/kb/3150513) May 2016 Compatibility Update for Windows 7, 8, 8.1, another Windows 10 Upgrade KB
 - [KB3173040](https://support.microsoft.com/en-us/kb/3173040) Fullscreen Windows 10 nagware experience
+- [KB4493132](https://support.microsoft.com/en-us/kb/4493132) Windows 7 End of Support nagware
 
 ![Hide Updates](.github/images/hide_updates.png)
