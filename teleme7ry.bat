@@ -2,7 +2,7 @@
 :init
 set name=Teleme7ry
 set namecap=TELEME7RY
-set scriptver=1.6
+set scriptver=1.7
 title %name%
 goto checksystem
 :checksystem
@@ -212,6 +212,8 @@ echo Uninstalling KB3123862: Updated capabilities to upgrade Windows 7.
 wusa /uninstall /kb:3123862 /quiet /norestart
 echo Uninstalling KB971033: Windows Activation / Genuine Advantage (WGA).
 wusa /uninstall /kb:971033 /quiet /norestart
+echo Uninstalling KB4493132: Windows 7 End of Support nagware.
+wusa /uninstall /kb:4493132 /quiet /norestart
 echo The updates have been uninstalled.
 echo.
 echo BLOCKING THE DOMAINS AND IPS...
