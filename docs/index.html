@@ -1,0 +1,169 @@
+<head>
+<title>Teleme7ry</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="no-referrer">
+<link type="image/png" rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+<div class="container">
+	<div align="center">
+		<img class="img-responsive" src="assets/favicon.png" alt="Teleme7ry"></a>
+		<h1 id="title">TELEME7RY</h1>
+
+		<h4>Automated batch script to disable telemetry in Windows 7.</h4>
+
+		<p>
+		<a href="#about">About</a> •
+		<a href="#getting-started">Getting Started</a> •
+		<a href="#download">Download</a> •
+		<a href="#bugs-issues">Issues</a> •
+		<a href="#credits">Credits</a> •
+		<a href="#source-code">Source Code</a> •
+		<a href="#license">License</a>
+		</p>
+	</div>
+
+	<h2 id="about">About</h2>
+
+	<p>This batch script will remove telemetry-related Tasks, Services and Updates (nagware updates as well).</p>
+
+	<p>It will also block <a href="https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt">telemetry domains and IPs</a>.</p>
+
+	<p>For more details refer to <a href="https://github.com/Strappazzon/teleme7ry/wiki">the wiki</a>.</p>
+
+	<h2 id="getting-started">Getting Started</h2>
+
+	<blockquote>
+	<p class="quote-title-warning">⚠ WARNING</p>
+	<p class="quote-text">
+		Before you proceed, please make sure that:
+		<ul>
+			<li>Windows Update DOES NOT install updates automatically.</li>
+			<li>hosts is not write protected. Some antivirus products make it read-only.</li>
+			<li>You have read this page.</li>
+		</ul>
+	</p>
+	</blockquote>
+
+	<p>Run <strong>teleme7ry.bat</strong> with elevated privileges.</p>
+
+	<p>Teleme7ry will run some checks and if they are succeful you will be presented with this display:</p>
+
+	<a href="assets/screenshot.png"><img class="img-responsive" src="assets/screenshot.png" alt="Teleme7ry"></a>
+
+	<p>Here's a description of each task:</p>
+
+	<ol>
+		<li><strong>Create a restore point</strong></li>
+			<ul>
+				<li>A system restore point with the name "<strong>Teleme7ry vX.Y</strong>" will be created.</li>
+				<li>Make sure that System Restore is On otherwise the task will fail.</li>
+			</ul>
+		<li><strong>Stop and delete telemetry services</strong></li>
+			<ul>
+				<li>Telemetry services will be stopped and deleted. You can see the full list <a href="https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services">here</a>.</li>
+			</ul>
+		<li><strong>Delete telemetry tasks</strong></li>
+			<ul>
+				<li>Telemetry tasks will be deleted. You can see the full list <a href="https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Tasks">here</a>.</li>
+			</ul>
+		<li><strong>Block telemetry domains and IPs</strong></li>
+			<ul>
+				<li>Teleme7ry rules will be merged with the hosts file. You can see all the rules <a href="https://github.com/Strappazzon/teleme7ry/wiki/Hosts-rules">here</a>.</li>
+				<li>Duplicate lines inside the hosts file, if any, will be removed (due to limitations, this includes hosts entries that have nothing to do with telemetry).</li>
+			</ul>
+		<li><strong>Uninstall telemetry and nagware updates</strong></li>
+			<ul>
+				<li>Telemetry and Nagware updates will be uninstalled. You can see the full list <a href="https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates">here</a>.</li>
+				<li>Your computer will be restarted aftwerwards.</li>
+			</ul>
+	</ol>
+	<ul>
+		<li>A <em>(case insensitive)</em>. <strong>Automatic mode: Perform all of the above tasks</strong></li>
+			<ul>
+				<li>The script will go through every task above, in order.</li>
+			</ul>
+		<li>Q <em>(case insensitive)</em>. <strong>Quit</strong></li>
+			<ul>
+				<li>The script will quit without making changes to the system.</li>
+			</ul>
+	</ul>
+
+	<blockquote>
+	<p class="quote-title-info">ℹ ATTENTION</p>
+	<p class="quote-text">
+		Remember to hide the updates uninstalled by Teleme7ry.
+		<ul>
+			<li>Press <kbd>Win</kbd> + <kbd>R</kbd>, type <strong>control</strong> and hit <kbd>Enter</kbd>. The Control Panel will show up.</li>
+			<li>Navigate to <strong>System and Security</strong> > <strong>Windows Update</strong> > <strong>Check for Updates</strong> and hide all the updates listed <a href="https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates">here</a>, under Important and Optional.</li>
+		</ul>
+	</p>
+	</blockquote>
+
+	<h2 id="download">Download</h2>
+
+	<p>You can <a href="https://github.com/Strappazzon/teleme7ry/releases/latest">download</a> the latest version of Teleme7ry from the Releases page.</p>
+
+	<h2 id="bugs-issues">Bugs? Issues?</h2>
+
+	<p>But also suggestions? New ideas?</p>
+
+	<p>Please create an <a href="https://github.com/Strappazzon/teleme7ry/issues">issue on GitHub</a>.</p>
+
+	<h2 id="credits">Credits</h2>
+
+	<ul>
+		<li>Updates, Hosts, Services and Tasks
+			<ul>
+				<li><a href="https://superuser.com/a/972506">https://superuser.com/a/972506</a></li>
+				<li><a href="https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/">https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/</a></li>
+				<li><a href="https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection">https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection</a></li>
+				<li><a href="https://github.com/10se1ucgo/DisableWinTracking/issues/371">https://github.com/10se1ucgo/DisableWinTracking/issues/371</a></li>
+				<li><a href="https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138">https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138</a></li>
+				<li><a href="https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/">https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/</a></li>
+				<li><a href="https://www.ghacks.net/2019/09/11/windows-september-2019-updates-more-search-woes-and-telemetry/">https://www.ghacks.net/2019/09/11/windows-september-2019-updates-more-search-woes-and-telemetry/</a></li>
+				<li><a href="https://www.askwoody.com/forums/topic/september-patch-tuesday-rolling-out/">https://www.askwoody.com/forums/topic/september-patch-tuesday-rolling-out/</a></li>
+				<li><a href="https://www.getblackbird.net/blacklist/updates/">https://www.getblackbird.net/blacklist/updates/</a></li>
+			</ul>
+		</li>
+		<li>Logo
+			<ul>
+				<li><a href="https://icons8.com/icons/set/filter">https://icons8.com/icons/set/filter</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<h2 id="source-code">Source Code</h2>
+
+	<p>The complete Teleme7ry source code is available <a href="https://github.com/Strappazzon/teleme7ry">on GitHub</a>.</p>
+
+	<h2 id="license">License</h2>
+
+	<p>By downloading and/or using Teleme7ry, you are accepting the license terms.</p>
+
+	<div class="codeblock">
+	<p>Copyright (c) 2019 Alberto Strappazzon</p>
+
+	<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:</p>
+
+	<p>The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.</p>
+
+	<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.</p>
+	</div>
+</div>
+</body>
