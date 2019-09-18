@@ -27,7 +27,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 
 ## Getting Started
 
-> #### ⚠️ WARNING
+> ### <img src="./images/exclamation.png" width="16px" height="16px"> **WARNING**
 >
 > Before you proceed, please make sure that:
 >
@@ -61,7 +61,7 @@ Here's a description of each task:
 - Q *(case insensitive)*. **Quit**
   - The script will quit without making changes to the system.
 
-> #### 🔵 ATTENTION
+> ### <img src="./images/information.png" width="16px" height="16px"> **ATTENTION**
 >
 > Remember to hide the updates uninstalled by Teleme7ry.
 >
@@ -83,15 +83,18 @@ Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issu
 
 ## Credits
 
-- Updates, Hosts, Services and Tasks
-  - [How to stop Microsoft from gathering telemetry data from Windows 7, 8, and 8.1 - Super User](https://superuser.com/a/972506)
-  - [Blocking Telemetry in Windows 7 and 8.1 - ghacks.net](https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/)
-  - [Privacy In Windows 7 – How To Disable Telemetry Data Collection - DeskRoll](https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection)
-  - [dwt_util.py - DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138)
-  - [How to Avoid Windows 7’s End-of-Support Nags - How-To Geek](https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/)
-  - [Updates Blacklist - Blackbird](https://www.getblackbird.net/blacklist/updates/)
-- Logo
-  - [Icons8](https://icons8.com/icons/set/filter)
+### Updates, Hosts, Services and Tasks
+
+- [How to stop Microsoft from gathering telemetry data from Windows 7, 8, and 8.1 - Super User](https://superuser.com/a/972506)
+- [Blocking Telemetry in Windows 7 and 8.1 - ghacks.net](https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/)
+- [Privacy In Windows 7 – How To Disable Telemetry Data Collection - DeskRoll](https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection)
+- [dwt_util.py - DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138)
+- [How to Avoid Windows 7’s End-of-Support Nags - How-To Geek](https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/)
+- [Updates Blacklist - Blackbird](https://www.getblackbird.net/blacklist/updates/)
+
+### Logo
+
+- [Icons8](https://icons8.com/icons/set/filter)
 
 ## License
 
