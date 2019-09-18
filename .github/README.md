@@ -39,7 +39,7 @@ Run **teleme7ry.bat** with elevated privileges.
 
 Teleme7ry will run some checks and if they are successful you will be presented with this display:
 
-![Teleme7ry](./images/Preview.png)
+![Teleme7ry](./images/preview.png)
 
 Here's a description of each task:
 
@@ -69,7 +69,7 @@ Here's a description of each task:
 >
 > Navigate to **System and Security** > **Windows Update** > **Check for Updates** and hide all the updates listed [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates), under **Important** and **Optional**.
 
-![Hide Updates](./images/Hide_Updates.png)
+![Hide Updates](./images/hide_updates.png)
 
 ## Download
 
