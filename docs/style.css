@@ -1,3 +1,13 @@
+/*! Teleme7ry Stylesheet
+ * Copyright 2019 Alberto Strappazzon
+ * Licensed under MIT https://github.com/Strappazzon/teleme7ry/blob/master/LICENSE
+ *! A small portion of this stylesheet uses code from kbd
+ * Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
+ * Licensed under MIT https://github.com/auth0/kbd/blob/gh-pages/LICENSE
+ *! A small portion of this stylesheet uses code from 98.js
+ * https://github.com/1j01/98
+*/
+
 /*! Fixedsys Excelsior
  * https://github.com/kika/fixedsys
 */
@@ -14,10 +24,21 @@
 
 ::selection { background-color: #000080; color: #fff; }
 
+::-webkit-scrollbar { background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEW9vb3///8EwsWUAAAADElEQVQI12NoYHAAAAHEAMFJRSpJAAAAAElFTkSuQmCC') repeat; }
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb { width: 16px; }
+::-webkit-scrollbar-thumb {
+	background-color: #c0c0c0;
+	border-top: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	box-shadow: 1px 1px 0 white inset, -1px -1px 0 #707070 inset;
+}
+
 html {
-	background: #2d5993;
+	background-color: #2d5993;
 	color: #fff;
-	font-family: Tahoma, Verdana;
+	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 14px;
 }
 
