@@ -3,7 +3,7 @@
 */
 @font-face {
 	font-family: 'Fixedsys Excelsior';
-	src: url(assets/fonts/Fixedsys-Excelsior.woff2) format('woff2');
+	src: url(assets/webfonts/Fixedsys-Excelsior.woff2) format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	-webkit-font-smoothing: aliased;
