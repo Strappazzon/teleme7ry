@@ -31,25 +31,11 @@ body { margin: 25px 0 25px 0; text-align: left; }
 	margin-left: auto;
 }
 
-@media (min-width: 576px) {
-	.container { max-width: 540px; }
-}
-
-@media (min-width: 768px) {
-	.container { max-width: 720px; }
-}
-
-@media (min-width: 992px) {
-	.container { max-width: 960px; }
-}
-
-@media (min-width: 1200px) {
-	.container { max-width: 1140px; }
-}
-
-@media (min-width: 1600px) {
-	.container { max-width: 1350px; }
-}
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 992px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+@media (min-width: 1600px) { .container { max-width: 1350px; } }
 
 a:link, a:visited { color: #c7ede6; text-decoration: none; outline: none; }
 
@@ -65,10 +51,6 @@ img { vertical-align: middle; border-style: none; }
 
 .screenshot:hover { box-shadow: 1px 1px 0 0 #000; }
 
-/*! kbd
- * Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
- * https://github.com/auth0/kbd
-*/
 kbd {
 	font-family: "Lucida Console", monospace;
 	display: inline-block;
@@ -93,14 +75,11 @@ kbd {
 	user-select: none;
 }
 
-kbd:hover,
-kbd:hover * {
-	color: black;
-}
+kbd:hover, kbd:hover * { color: #000; }
 
 kbd:active,
 kbd:active * {
-	color: black;
+	color: #000;
 	box-shadow: 1px 1px 0px #ddd inset;
 }
 
