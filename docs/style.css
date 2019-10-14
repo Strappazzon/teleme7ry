@@ -1,5 +1,5 @@
 /*! Teleme7ry Stylesheet
- * Copyright 2019 Alberto Strappazzon
+ * Copyright (c) 2019 Alberto Strappazzon
  * Licensed under MIT https://github.com/Strappazzon/teleme7ry/blob/master/LICENSE
  *! A small portion of this stylesheet uses code from kbd
  * Copyright (c) 2015 Auth0, Inc. <support@auth0.com> (http://auth0.com)
@@ -13,7 +13,7 @@
 */
 @font-face {
 	font-family: 'Fixedsys Excelsior';
-	src: url(assets/webfonts/Fixedsys-Excelsior.woff2) format('woff2');
+	src: url('assets/webfonts/Fixedsys-Excelsior.woff2') format('woff2');
 	font-weight: normal;
 	font-style: normal;
 	-webkit-font-smoothing: aliased;

@@ -1,5 +1,5 @@
 /*! Teleme7ry Stylesheet
- * Copyright 2019 Alberto Strappazzon
+ * Copyright (c) 2019 Alberto Strappazzon
  * Licensed under MIT https://github.com/Strappazzon/teleme7ry/blob/master/LICENSE
  *! A small portion of this stylesheet uses code from BSOD
  * https://codepen.io/tholman/pen/avEYxW
@@ -22,7 +22,7 @@ body {
 	display: grid;
 	place-items: center;
 	height: 100vh;
-	font-family: 'Lucida Sans Typewriter', 'Lucida Console', Monaco, 'Bitstream Vera Sans Mono', monospace;
+	font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 	font-size: 14px;
 	color: #fff;
 	background-color: #0000aa;
