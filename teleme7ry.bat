@@ -1,7 +1,7 @@
 @echo off
 :init
 set name=Teleme7ry
-set scriptver=1.8
+set scriptver=1.9
 title %name%
 goto checksystem
 :checksystem
