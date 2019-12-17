@@ -19,7 +19,7 @@
 
 ## About
 
-This batch script will remove telemetry-related Tasks, Services and Updates (nagware updates as well).
+This batch script will remove telemetry and nagware-related Tasks, Services and Updates.
 
 It will also block [telemetry domains and IPs](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt).
 
@@ -48,8 +48,8 @@ Here's a description of each task:
     - Make sure that System Restore is On otherwise the task will fail.
 - 2\. **Stop and delete telemetry services**
   - Telemetry services will be stopped and deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services).
-- 3\. **Delete telemetry tasks**
-  - Telemetry tasks will be deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Tasks).
+- 3\. **Delete telemetry and nagware tasks**
+  - Telemetry and nagware tasks will be deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Tasks).
 - 4\. **Block telemetry domains and IPs**
   - Teleme7ry rules will be merged with the hosts file. You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt).
   - Duplicate lines inside the hosts file, if any, will be removed (due to limitations, this includes hosts entries that have nothing to do with telemetry).
@@ -90,6 +90,7 @@ Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issu
 - [Privacy In Windows 7 – How To Disable Telemetry Data Collection - DeskRoll](https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection)
 - [dwt_util.py - DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138)
 - [How to Avoid Windows 7’s End-of-Support Nags - How-To Geek](https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/)
+- [How to disable the "Your Windows 7 PC is out of support" full screen popup - ghacks.net](https://www.ghacks.net/2019/12/12/how-to-disable-the-your-windows-7-pc-is-out-of-support-full-screen-popop/)
 - [Updates Blacklist - Blackbird](https://www.getblackbird.net/blacklist/updates/)
 
 ### Logo
