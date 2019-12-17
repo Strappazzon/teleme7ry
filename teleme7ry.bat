@@ -49,7 +49,7 @@ echo AVAILABLE TASKS:
 echo.
 echo 1. Create a restore point
 echo 2. Stop and delete telemetry services
-echo 3. Delete telemetry tasks
+echo 3. Delete telemetry and nagware tasks
 echo 4. Block telemetry domains and IPs
 echo 5. Uninstall telemetry and nagware updates
 echo     - Your computer will be restarted afterwards
@@ -127,6 +127,12 @@ schtasks /delete /tn "\Microsoft\Windows\NetTrace\GatherNetworkInfo" /f
 schtasks /delete /tn "\Microsoft\Windows\Shell\FamilySafetyMonitor" /f
 schtasks /delete /tn "\Microsoft\Windows\Shell\FamilySafetyRefresh" /f
 schtasks /delete /tn "\Microsoft\Windows\IME\SQM data sender" /f
+schtasks /delete /tn "\Microsoft\Windows\Setup\EOSNotify" /f
+schtasks /delete /tn "\Microsoft\Windows\Setup\EOSNotify2" /f
+takeown /f "C:\Windows\System32\EOSNotify.exe"
+icacls "C:\Windows\System32\EOSNotify.exe" /grant administrators:F
+icacls "C:\Windows\System32\EOSNotify.exe" /inheritance:r /deny SYSTEM:F /grant Administrators:F
+del /f "C:\Windows\System32\EOSNotify.exe"
 if /I "%userchoice%" == "A" (
 	timeout /t 5
 	goto hosts
