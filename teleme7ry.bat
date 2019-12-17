@@ -18,7 +18,7 @@ endlocal
 cls
 color 4f
 echo.
-echo ERROR: This operating system is not compatible with %name%.
+echo ERROR: %name% is not compatible with this operating system.
 timeout /t -1
 exit
 :admin
@@ -39,7 +39,7 @@ exit
 cls
 color 3f
 echo %name% [Version: %scriptver%]
-echo (c) 2019 Alberto Strappazzon. MIT License.
+echo Copyright (c) 2019 Alberto Strappazzon. MIT License.
 echo.
 echo Before you proceed:
 echo  - Make sure that Windows Update DOES NOT install updates automatically.
@@ -305,7 +305,7 @@ if /I "%userchoice%" == "A" (
 cls
 color 3f
 echo.
-echo You must restart your computer to apply these changes.
+echo You must restart your computer to apply the changes.
 echo Before restarting, save any open files and close all programs.
 echo.
 echo NOTE: Remember to hide the uninstalled updates.
