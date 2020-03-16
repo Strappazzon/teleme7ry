@@ -1,25 +1,36 @@
+---
+layout: none
+title: "Teleme7ry"
+description: "Automated batch script to disable telemetry in Windows 7."
+---
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Teleme7ry</title>
-	<meta name="description" content="Automated batch script to disable telemetry in Windows 7.">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta name="keywords" content="teleme7ry,telemetry,windows telemetry,windows 7 telemetry,disable telemetry,disable windows 7 telemetry">
 	<meta name="author" content="Alberto Strappazzon">
+	<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="theme-color" content="#2d5993">
 	<meta name="referrer" content="no-referrer">
-	<meta property="og:title" content="Teleme7ry">
-	<meta property="og:description" content="Automated batch script to disable telemetry in Windows 7.">
+	<meta property="og:title" content="{{ page.title }}">
+	<meta property="og:description" content="{{ page.description }}">
 	<meta property="og:site_name" content="Teleme7ry">
-	<meta property="og:url" content="https://strappazzon.github.io/teleme7ry/">
+	<meta property="og:url" content="{{ site.baseurl | prepend: site.url }}">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://strappazzon.github.io/teleme7ry/assets/ogimage.png">
-	<link type="image/png" rel="icon" href="assets/favicon.png">
-	<link rel="stylesheet" href="style.css?v=2">
+	<meta property="og:image" content="{{ site.baseurl | prepend: site.url }}/assets/ogimage.png">
+	<link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url | replace: 'index.html',''}}">
+	<link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/style.css?v=2' | relative_url }}">
 </head>
 <body>
 <div class="container">
 	<div align="center">
-		<img class="img-responsive" src="assets/favicon.png" alt="Teleme7ry">
+		<img class="img-responsive" src="{{ '/assets/favicon.png' | relative_url }}" alt="">
 		<h1 id="title">TELEME7RY</h1>
 
 		<h4>Automated batch script to disable telemetry in Windows 7.</h4>
@@ -46,7 +57,7 @@
 	<h2 id="getting-started">Getting Started</h2>
 
 	<blockquote>
-	<p class="quote-title"><img class="icon" src="assets/exclamation.png" draggable="false"> WARNING</p>
+	<p class="quote-title"><img class="icon" src="{{ '/assets/exclamation.png' | relative_url }}" alt="" draggable="false"> WARNING</p>
 	<p class="quote-text">
 		Before you proceed, please make sure that:
 		<ul>
@@ -61,7 +72,7 @@
 
 	<p>Teleme7ry will run some checks and if they are succeful you will be presented with this display:</p>
 
-	<a href="assets/screenshot.png"><img class="img-responsive screenshot" src="assets/screenshot.png" alt="Teleme7ry"></a>
+	<a href="{{ '/assets/screenshot.png' | relative_url }}"><img class="img-responsive screenshot" src="{{ '/assets/screenshot.png' | relative_url }}" alt="Teleme7ry Screenshot"></a>
 
 	<p>Here's a description of each task:</p>
 
@@ -102,7 +113,7 @@
 	</ul>
 
 	<blockquote>
-	<p class="quote-title"><img class="icon" src="assets/information.png" draggable="false"> ATTENTION</p>
+	<p class="quote-title"><img class="icon" src="{{ '/assets/information.png' | relative_url }}" alt="" draggable="false"> ATTENTION</p>
 	<p class="quote-text">
 		Remember to hide the updates uninstalled by Teleme7ry.
 		<ul>
@@ -151,7 +162,7 @@
 	<p>By downloading and/or using Teleme7ry, you are accepting the license terms.</p>
 
 	<blockquote class="notepad">
-	<p class="quote-title"><img class="icon" src="assets/notepad_file.png" draggable="false"> LICENSE.txt - Notepad</p>
+	<p class="quote-title"><img class="icon" src="{{ '/assets/notepad_file.png' | relative_url }}" alt="" draggable="false"> LICENSE.txt - Notepad</p>
 	<p class="notepad-textarea">
 		Copyright (c) 2018 - 2019 Alberto Strappazzon
 		<br>

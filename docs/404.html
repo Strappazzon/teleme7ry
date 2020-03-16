@@ -1,31 +1,32 @@
+---
+layout: none
+title: "Not Found | Teleme7ry"
+---
+
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<title>Teleme7ry - Not Found</title>
-	<meta name="description" content="Automated batch script to disable telemetry in Windows 7.">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<title>{{ page.title }}</title>
 	<meta name="author" content="Alberto Strappazzon">
+	<meta name="robots" content="noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="referrer" content="no-referrer">
-	<meta property="og:title" content="Teleme7ry">
-	<meta property="og:description" content="Automated batch script to disable telemetry in Windows 7.">
-	<meta property="og:site_name" content="Teleme7ry">
-	<meta property="og:url" content="https://strappazzon.github.io/teleme7ry/">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://strappazzon.github.io/teleme7ry/assets/ogimage.png">
-	<link type="image/png" rel="icon" href="assets/favicon.png">
-	<link rel="stylesheet" href="style_404.css?v=2">
+	<link rel="canonical" href="{{ site.baseurl | prepend: site.url }}{{ page.url | replace: 'index.html',''}}">
+	<link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/style_404.css?v=2' | relative_url }}">
 </head>
 <body>
 	<div>
-	<div class="error-header"><span>Teleme7ry</span></div>
-	The resource you requested could not be found. Most likely because the resource no longer exist, has moved, or you like 404 pages.
-	<br><br>
-	*&nbsp;&nbsp;If you're not sure what you're looking for, return to the homepage.
-	<br><br>
-	*&nbsp;&nbsp;If you believe you reached this page in error, please contact me.
-	<br><br>
-	<p align="center"><a href="https://strappazzon.github.io/teleme7ry/">Click here to go to the homepage&nbsp;</a></p>
+		<div class="error-header"><span>Teleme7ry</span></div>
+		The resource you requested could not be found. Most likely because the resource no longer exist, has moved, or you like 404 pages.
+		<br><br>
+		*&nbsp;&nbsp;If you're not sure what you're looking for, return to the homepage.
+		<br><br>
+		*&nbsp;&nbsp;If you believe you reached this page in error, please contact me.
+		<br><br>
+		<p align="center"><a href="{{ site.baseurl | prepend: site.url }}">Click here to go to the homepage&nbsp;</a></p>
 	</div>
 </body>
 </html>

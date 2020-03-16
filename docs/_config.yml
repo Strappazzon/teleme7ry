@@ -1,0 +1,6 @@
+baseurl: "/teleme7ry"
+sass:
+  sass_dir: /
+  style: compressed
+exclude:
+  - README.md
