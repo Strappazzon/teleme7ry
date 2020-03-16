@@ -16,9 +16,10 @@
 */
 @font-face {
 	font-family: 'Fixedsys Excelsior';
-	src: url('assets/webfonts/Fixedsys-Excelsior.woff2') format('woff2');
+	src: url("{{ '/assets/webfonts/Fixedsys-Excelsior.woff2' | relative_url }}") format('woff2');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 	-webkit-font-smoothing: aliased;
 	font-smooth: never;
 }
