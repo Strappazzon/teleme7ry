@@ -79,7 +79,7 @@ You can [download](https://github.com/Strappazzon/teleme7ry/releases/latest) the
 
 But also suggestions? New ideas?
 
-Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issues).
+Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issues/new/choose).
 
 ## Credits
 
