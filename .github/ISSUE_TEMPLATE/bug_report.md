@@ -7,21 +7,17 @@ assignees: Strappazzon
 
 ---
 
-**Describe the bug**
+### Describe the bug
 <!-- A clear and concise description of what the bug is. -->
 
-
-**Reproduction steps**
+### Reproduction steps
 <!-- Steps to reproduce the behavior. -->
 
-
-**Expected behavior**
+### Expected behavior
 <!-- A clear and concise description of what you expected to happen. -->
 
-
-**Screenshots**
+### Screenshots
 <!-- Add screenshots to help explain your problem. You can remove this section if you don't have any screenshot. -->
 
-
-**Additional information**
-<!-- Add any other information about the problem here. You can remove this section if you don't have any additional information -->
+### Additional information
+<!-- Add any other information about the problem here. You can remove this section if you don't have any additional information. -->
