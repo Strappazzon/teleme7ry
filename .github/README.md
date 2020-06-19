@@ -1,8 +1,8 @@
 <h1 align="center">
   <br>
-  <img src="./images/logo.png" alt="Teleme7ry"></a>
+  <img src="https://strappazzon.github.io/teleme7ry/static/img/favicon.png" alt="">
   <br>
-  TELEME7RY
+  Teleme7ry
   <br>
 </h1>
 
@@ -18,7 +18,7 @@
   <a href="#about">About</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#download">Download</a> •
-  <a href="#bugs-issues">Issues</a> •
+  <a href="#contributing">Contributing</a> •
   <a href="#credits">Credits</a> •
   <a href="#license">License</a>
 </p>
@@ -33,75 +33,74 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 
 ## Getting Started
 
-> ### <img src="./images/exclamation.png" width="16px" height="16px"> **WARNING**
+> ### <img src="https://strappazzon.github.io/teleme7ry/static/img/exclamation.png" width="16px" height="16px"> **WARNING**
 >
 > Before you proceed, please make sure that:
 >
-> - Windows Update DOES NOT install updates automatically.
-> - hosts is not write protected. Some antivirus products make it read-only.
-> - You have read this README.
+> * Windows Update DOES NOT install updates automatically.
+> * `hosts` file is not write protected. Some antivirus products make it read-only.
+> * You have read this README.
 
 Run **teleme7ry.bat** with elevated privileges.
 
 Teleme7ry will run some checks and if they are successful you will be presented with this display:
 
-![Teleme7ry](./images/preview.png)
+![Teleme7ry](https://strappazzon.github.io/teleme7ry/static/img/screenshot.png)
 
 Here's a description of each task:
 
-- 1\. **Create a restore point**
-  - A system restore point with the name "**Teleme7ry vX.Y**" will be created.
-    - Make sure that System Restore is On otherwise the task will fail.
-- 2\. **Stop and delete telemetry services**
-  - Telemetry services will be stopped and deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services).
-- 3\. **Delete telemetry and nagware tasks**
-  - Telemetry and nagware tasks will be deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks).
-- 4\. **Block telemetry domains and IPs**
-  - Teleme7ry rules will be merged with the hosts file. You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt).
-  - Duplicate lines inside the hosts file, if any, will be removed (due to limitations, this includes hosts entries that have nothing to do with telemetry).
-- 5\. **Uninstall telemetry and nagware updates**
-  - Telemetry and Nagware updates will be uninstalled. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates).
-  - Your computer will be restarted aftwerwards.
-- A *(case insensitive)*. **Automatic mode: Perform all of the above tasks**
-  - The script will go through every task above, in order.
-- Q *(case insensitive)*. **Quit**
-  - The script will quit without making changes to the system.
+* 1\. **Create a restore point**
+  * A system restore point with the name "**Teleme7ry vX.Y**" will be created.
+    * Make sure that System Restore is On otherwise the task will fail.
+* 2\. **Stop and delete telemetry services**
+  * Telemetry services will be stopped and deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services).
+* 3\. **Delete telemetry and nagware tasks**
+  * Telemetry and nagware tasks will be deleted. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks).
+* 4\. **Block telemetry domains and IPs**
+  * Teleme7ry rules will be merged with the hosts file. You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt).
+  * Duplicate lines inside the hosts file, if any, will be removed (due to limitations, this includes hosts entries that have nothing to do with telemetry).
+* 5\. **Uninstall telemetry and nagware updates**
+  * Telemetry and Nagware updates will be uninstalled. You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates).
+  * Your computer will be restarted aftwerwards.
+* A *(case insensitive)*. **Automatic mode: Perform all of the above tasks**
+  * The script will go through every task above, in order.
+* Q *(case insensitive)*. **Quit**
+  * The script will quit without making changes to the system.
 
-> ### <img src="./images/information.png" width="16px" height="16px"> **ATTENTION**
+> ### <img src="https://strappazzon.github.io/teleme7ry/static/img/information.png" width="16px" height="16px"> **ATTENTION**
 >
 > Remember to hide the updates uninstalled by Teleme7ry.
 >
-> Press **Win + R**, type **control** and hit enter. The Control Panel will show up.
->
-> Navigate to **System and Security** > **Windows Update** > **Check for Updates** and hide all the updates listed [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates), under **Important** and **Optional**.
+> Open the Control Panel and navigate to **System and Security** > **Windows Update** > **Check for Updates** and hide all the updates listed [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates), under **Important** and **Optional**.
 
-![Hide Updates](./images/hide_updates.png)
+![Hide Updates](https://strappazzon.github.io/teleme7ry/static/img/hide_updates.png)
 
 ## Download
 
 You can [download](https://github.com/Strappazzon/teleme7ry/releases/latest) the latest version of Teleme7ry from the Releases page.
 
-## Bugs? Issues?
+## Contributing
 
-But also suggestions? New ideas?
+If you are interested in fixing issues and contributing directly to Teleme7ry, please see:
 
-Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issues/new/choose).
+* [Contribution Guidelines](https://github.com/Strappazzon/teleme7ry/blob/master/.github/CONTRIBUTING.md)
+* [Code of Conduct](https://github.com/Strappazzon/teleme7ry/blob/master/.github/CODE_OF_CONDUCT.md)
 
 ## Credits
 
 ### Updates, Hosts, Services and Tasks
 
-- [How to stop Microsoft from gathering telemetry data from Windows 7, 8, and 8.1 - Super User](https://superuser.com/a/972506)
-- [Blocking Telemetry in Windows 7 and 8.1 - ghacks.net](https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/)
-- [Privacy In Windows 7 – How To Disable Telemetry Data Collection - DeskRoll](https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection)
-- [dwt_util.py - DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138)
-- [How to Avoid Windows 7’s End-of-Support Nags - How-To Geek](https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/)
-- [How to disable the "Your Windows 7 PC is out of support" full screen popup - ghacks.net](https://www.ghacks.net/2019/12/12/how-to-disable-the-your-windows-7-pc-is-out-of-support-full-screen-popop/)
-- [Updates Blacklist - Blackbird](https://www.getblackbird.net/blacklist/updates/)
+* [How to stop Microsoft from gathering telemetry data from Windows 7, 8, and 8.1 - Super User](https://superuser.com/a/972506)
+* [Blocking Telemetry in Windows 7 and 8.1 - ghacks.net](https://www.ghacks.net/2017/02/11/blocking-telemetry-in-windows-7-and-8-1/)
+* [Privacy In Windows 7 – How To Disable Telemetry Data Collection - DeskRoll](https://deskroll.com/blog/article.php?id=Privacy_In_Windows_7_%E2%80%93_How_To_Disable_Telemetry_Data_Collection)
+* [dwt_util.py - DisableWinTracking](https://github.com/10se1ucgo/DisableWinTracking/blob/master/dwt_util.py#L138)
+* [How to Avoid Windows 7’s End-of-Support Nags - How-To Geek](https://www.howtogeek.com/408556/how-to-avoid-windows-7s-end-of-support-nags/)
+* [How to disable the "Your Windows 7 PC is out of support" full screen popup - ghacks.net](https://www.ghacks.net/2019/12/12/how-to-disable-the-your-windows-7-pc-is-out-of-support-full-screen-popop/)
+* [Updates Blacklist - Blackbird](https://www.getblackbird.net/blacklist/updates/)
 
 ### Logo
 
-- [Icons8](https://icons8.com/icons/set/filter)
+* [Icons8](https://icons8.com/icons/set/filter)
 
 ## License
 
