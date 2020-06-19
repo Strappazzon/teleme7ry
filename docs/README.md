@@ -7,5 +7,5 @@ If you are looking for *Teleme7ry* source code, please [see the parent folder](h
 ### Running locally
 
 * Install [Ruby](https://www.ruby-lang.org)
-* Run `jekyll s` to serve the website locally
+* Run `jekyll serve` to serve the website locally
 * Navigate to <http://127.0.0.1:4000/teleme7ry/>
