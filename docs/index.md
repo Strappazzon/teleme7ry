@@ -115,7 +115,7 @@ If you are interested in fixing issues and contributing directly to Teleme7ry, p
 
 * [Icons8](https://icons8.com/icons/set/filter)
 
-### Source Code
+## Source Code
 
 The complete Teleme7ry source code is available [on GitHub](https://github.com/teleme7ry).
 
