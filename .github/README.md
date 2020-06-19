@@ -108,7 +108,7 @@ Please create an [issue on GitHub](https://github.com/Strappazzon/teleme7ry/issu
 ```
 MIT License
 
-Copyright (c) 2018 - 2019 Alberto Strappazzon
+Copyright (c) 2018 - 2020 Alberto Strappazzon
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
