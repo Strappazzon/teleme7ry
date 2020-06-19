@@ -1,5 +1,8 @@
-# Teleme7ry files
-working
+# Teleme7ry
+/working
 
 # Jekyll
-**/_site
+**/_site/
+**/.sass-cache/
+**/.jekyll-cache/
+**/.jekyll-metadata
