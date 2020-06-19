@@ -117,7 +117,7 @@ If you are interested in fixing issues and contributing directly to Teleme7ry, p
 
 ## Source Code
 
-The complete Teleme7ry source code is available [on GitHub](https://github.com/teleme7ry).
+The complete Teleme7ry source code is available [on GitHub](https://github.com/Strappazzon/teleme7ry).
 
 ## License
 
