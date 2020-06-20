@@ -101,6 +101,8 @@ The complete Teleme7ry source code is available [on GitHub](https://github.com/S
 
 ## License
 
+By downloading and/or using Teleme7ry, you are agreeing to the license terms.
+
 > ### <img src="https://strappazzon.github.io/teleme7ry/static/img/notepad_file.png" width="16px" height="16px"> LICENSE.txt - Notepad
 >
 > <p class="notepad-textarea">
