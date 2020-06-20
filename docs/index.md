@@ -15,18 +15,6 @@ description: "Automated batch script to disable telemetry in Windows 7."
 <h4 align="center">Automated batch script to disable telemetry in Windows 7.</h4>
 
 <p align="center">
-  <a class="img-badge" href="https://github.com/Strappazzon/teleme7ry">
-    <img alt="Source Code" src="https://img.shields.io/badge/Source%20Code-%23444444?style=flat&logo=GitHub">
-  </a>
-  <a class="img-badge" href="https://github.com/Strappazzon/teleme7ry/releases">
-    <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/Strappazzon/teleme7ry/total?color=%23008080&label=Downloads&logo=DocuSign&logoColor=%23ffffff&style=flat-square">
-  </a>
-  <a class="img-badge" href="https://github.com/Strappazzon/teleme7ry/releases/latest">
-    <img alt="Latest Release" src="https://img.shields.io/github/v/release/Strappazzon/teleme7ry?color=%23000080&include_prereleases&label=Latest%20Release&style=flat-square">
-  </a>
-</p>
-
-<p align="center">
   <a href="#about">About</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#download">Download</a> •
