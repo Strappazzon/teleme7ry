@@ -30,9 +30,8 @@ description: "Automated batch script to disable telemetry in Windows 7."
   <a href="#about">About</a> •
   <a href="#getting-started">Getting Started</a> •
   <a href="#download">Download</a> •
-  <a href="#contributing">Contributing</a> •
-  <a href="#credits">Credits</a> •
   <a href="#source-code">Source Code</a> •
+  <a href="#credits">Credits</a> •
   <a href="#license">License</a>
 </p>
 
@@ -92,12 +91,9 @@ Here's a description of each task:
 
 You can [download](https://github.com/Strappazzon/teleme7ry/releases/latest) the latest version of Teleme7ry from the Releases page.
 
-## Contributing
+## Source Code
 
-If you are interested in fixing issues and contributing directly to Teleme7ry, please see:
-
-* [Contribution Guidelines](https://github.com/Strappazzon/teleme7ry/blob/master/.github/CONTRIBUTING.md)
-* [Code of Conduct](https://github.com/Strappazzon/teleme7ry/blob/master/.github/CODE_OF_CONDUCT.md)
+The complete Teleme7ry source code is available [on GitHub](https://github.com/Strappazzon/teleme7ry).
 
 ## Credits
 
@@ -114,10 +110,6 @@ If you are interested in fixing issues and contributing directly to Teleme7ry, p
 ### Logo
 
 * [Icons8](https://icons8.com/icons/set/filter)
-
-## Source Code
-
-The complete Teleme7ry source code is available [on GitHub](https://github.com/Strappazzon/teleme7ry).
 
 ## License
 
