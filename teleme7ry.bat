@@ -146,6 +146,13 @@ color 07
 echo APPLYING HOSTS RULES...
 echo ===========================================
 echo.
+if not exist "%~dp0\rules.txt" (
+	color 4f
+	echo The rules file could not be found.
+	echo Make sure to extract/download it alongside Teleme7ry.
+	timeout /t -1
+	goto home
+)
 echo Merging Teleme7ry rules with system hosts...
 if not exist "%~dp0\working\" mkdir %~dp0\working
 type %windir%\System32\drivers\etc\hosts %~dp0\rules.txt > %~dp0\working\merged.txt
