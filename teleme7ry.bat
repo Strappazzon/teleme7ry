@@ -25,8 +25,8 @@ exit
 echo.
 echo Checking permissions...
 ping 127.0.0.1 -n 2 > nul
-net session >nul 2>&1
-if %errorLevel% == 0 (goto home) else (goto error)
+fltmc >nul 2>&1 || (goto error)
+goto home
 goto admin
 :error
 cls
