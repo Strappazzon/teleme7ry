@@ -39,7 +39,7 @@ exit
 cls
 color 3f
 echo %name% [Version: %scriptver%]
-echo Copyright (c) 2019 Alberto Strappazzon. MIT License.
+echo Copyright (c) 2019 - 2020 Alberto Strappazzon. MIT License.
 echo.
 echo Before you proceed:
 echo  - Make sure that Windows Update DOES NOT install updates automatically.
