@@ -12,29 +12,31 @@ ping 127.0.0.1 -n 2 > nul
 net session >nul 2>&1
 setlocal
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i.%%j
-if "%version%" == "6.1" (goto admin) else (goto incompatible)
+if "%version%" == "6.1" (
+	goto admin
+) else (
+	cls
+	color 4f
+	echo.
+	echo ERROR: %name% is not compatible with this operating system.
+	timeout /t -1
+	exit
+)
 endlocal
-:incompatible
-cls
-color 4f
-echo.
-echo ERROR: %name% is not compatible with this operating system.
-timeout /t -1
-exit
 :admin
 echo.
 echo Checking permissions...
 ping 127.0.0.1 -n 2 > nul
-fltmc >nul 2>&1 || (goto error)
+fltmc >nul 2>&1 || (
+	cls
+	color 4f
+	echo.
+	echo ERROR: %name% needs elevated privileges in order to make changes to your system.
+	timeout /t -1
+	exit
+)
 goto home
 goto admin
-:error
-cls
-color 4f
-echo.
-echo ERROR: %name% needs elevated privileges in order to make changes to your system.
-timeout /t -1
-exit
 :home
 cls
 color 3f
