@@ -1,3 +1,6 @@
 * text=auto eol=crlf
 
+*.md  text eol=lf
+*.yml text eol=lf
+
 *.png binary

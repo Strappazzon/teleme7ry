@@ -13,6 +13,18 @@
 		"editor.insertSpaces": false,
 		"editor.tabSize": 4
 	},
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+		"editor.insertSpaces": true,
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"other": "off",
+			"strings": "off"
+		},
+		"editor.tabSize": 2,
+		"files.eol": "\n",
+		"files.trimTrailingWhitespace": false
+	},
 	"[scminput]": {
 		"editor.rulers": [
 			70
@@ -28,5 +40,7 @@
 	"files.trimTrailingWhitespace": true,
 	"git.inputValidation": true,
 	"git.inputValidationLength": 70,
-	"git.inputValidationSubjectLength": 70
+	"git.inputValidationSubjectLength": 70,
+	"markdown.validate.enabled": true,
+	"markdown.validate.referenceLinks.enabled": "ignore"
 }
