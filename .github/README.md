@@ -20,7 +20,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 
 ## Getting Started
 
-> [!IMPORTANT]
+> [!WARNING]
 >
 > Before you proceed, please make sure that:
 >
@@ -59,7 +59,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 - Q *(case insensitive)* **Quit**
   - The script will quit without making any change to the system.
 
-> [!IMPORTANT]
+> [!WARNING]
 >
 > Remember to hide the updates uninstalled by Teleme7ry.
 >

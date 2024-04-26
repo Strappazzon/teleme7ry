@@ -15,7 +15,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 ## Getting Started
 
 <!-- markdownlint-disable-next-line MD045 -->
-> ### ![](./assets/img/ico/exclamation.png) IMPORTANT
+> ### ![](./assets/img/ico/exclamation.png) WARNING
 >
 > Before you proceed, please make sure that:
 >
@@ -55,7 +55,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
   - The script will quit without making any change to the system.
 
 <!-- markdownlint-disable-next-line MD045 -->
-> ### ![](./assets/img/ico/exclamation.png) IMPORTANT
+> ### ![](./assets/img/ico/exclamation.png) WARNING
 >
 > Remember to hide the updates uninstalled by Teleme7ry.
 >
