@@ -4,3 +4,8 @@
 # Jekyll
 **/_site*
 **/.jekyll-cache
+
+# VS Code
+.vscode/**
+!.vscode/extensions.json
+!.vscode/settings.json
