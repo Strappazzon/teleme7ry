@@ -13,14 +13,14 @@ net session >nul 2>&1
 setlocal
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i.%%j
 if "%version%" == "6.1" (
-	goto admin
+  goto admin
 ) else (
-	cls
-	color 4f
-	echo.
-	echo ERROR: %name% is not compatible with this operating system.
-	timeout /t -1
-	exit
+  cls
+  color 4f
+  echo.
+  echo ERROR: %name% is not compatible with this operating system.
+  timeout /t -1
+  exit
 )
 endlocal
 :admin
@@ -28,12 +28,12 @@ echo.
 echo Checking permissions...
 ping 127.0.0.1 -n 2 > nul
 fltmc >nul 2>&1 || (
-	cls
-	color 4f
-	echo.
-	echo ERROR: %name% needs elevated privileges in order to make changes to your system.
-	timeout /t -1
-	exit
+  cls
+  color 4f
+  echo.
+  echo ERROR: %name% needs elevated privileges in order to make changes to your system.
+  timeout /t -1
+  exit
 )
 goto home
 goto admin
@@ -59,7 +59,7 @@ echo     - Remember to hide the uninstalled updates
 echo A. Automatic mode: Perform all of the above tasks
 echo Q. Quit
 echo.
-set /p userchoice=TYPE AN OPTION (1-5, A, Q): 
+set /p userchoice=TYPE AN OPTION (1-5, A, Q):
 if "%userchoice%"=="1" goto restore
 if "%userchoice%"=="2" goto services
 if "%userchoice%"=="3" goto tasks
@@ -80,11 +80,11 @@ echo System Properties ^> System Protection ^> Configure...
 echo.
 wmic.exe /Namespace:\\root\default Path SystemRestore Call CreateRestorePoint "Teleme7ry %scriptver%", 100, 7
 if /I "%userchoice%" == "A" (
-	timeout /t 5
-	goto services
+  timeout /t 5
+  goto services
 ) else (
-	timeout /t -1
-	goto home
+  timeout /t -1
+  goto home
 )
 :services
 cls
@@ -103,11 +103,11 @@ icacls "C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtra
 icacls "C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl" /inheritance:r /deny SYSTEM:F /grant Administrators:F
 echo "" > C:\ProgramData\Microsoft\Diagnosis\ETLLogs\AutoLogger\AutoLogger-Diagtrack-Listener.etl
 if /I "%userchoice%" == "A" (
-	timeout /t 5
-	goto tasks
+  timeout /t 5
+  goto tasks
 ) else (
-	timeout /t -1
-	goto home
+  timeout /t -1
+  goto home
 )
 :tasks
 cls
@@ -136,11 +136,11 @@ icacls "C:\Windows\System32\EOSNotify.exe" /grant administrators:F
 icacls "C:\Windows\System32\EOSNotify.exe" /inheritance:r /deny SYSTEM:F /grant Administrators:F
 del /f "C:\Windows\System32\EOSNotify.exe"
 if /I "%userchoice%" == "A" (
-	timeout /t 5
-	goto hosts
+  timeout /t 5
+  goto hosts
 ) else (
-	timeout /t -1
-	goto home
+  timeout /t -1
+  goto home
 )
 :hosts
 cls
@@ -149,11 +149,11 @@ echo APPLYING HOSTS RULES...
 echo ===========================================
 echo.
 if not exist "%~dp0\rules.txt" (
-	color 4f
-	echo The rules file could not be found.
-	echo Make sure to extract/download it alongside Teleme7ry.
-	timeout /t -1
-	goto home
+  color 4f
+  echo The rules file could not be found.
+  echo Make sure to extract/download it alongside Teleme7ry.
+  timeout /t -1
+  goto home
 )
 echo Merging Teleme7ry rules with system hosts...
 if not exist "%~dp0\working\" mkdir %~dp0\working
@@ -168,13 +168,13 @@ set LF=^
 
 
 >"%cleaned%" (
-	for /f usebackq^ eol^=^%LF%%LF%^ delims^= %%A in ("%mergefile%") do (
-		set "ln=%%A"
-		setlocal enableDelayedExpansion
-		>"%dupl%" (echo !ln:\=\\!)
-		>nul findstr /ilg:"%dupl%" "%cleaned%" || (echo !ln!)
-		endlocal
-	)
+  for /f usebackq^ eol^=^%LF%%LF%^ delims^= %%A in ("%mergefile%") do (
+    set "ln=%%A"
+    setlocal enableDelayedExpansion
+    >"%dupl%" (echo !ln:\=\\!)
+    >nul findstr /ilg:"%dupl%" "%cleaned%" || (echo !ln!)
+    endlocal
+  )
 )
 >nul move /y "%cleaned%" "%~dp0\working\hosts_clean.txt"
 2>nul del "%dupl%"
@@ -188,11 +188,11 @@ echo.
 echo Flushing DNS resolver cache...
 ipconfig /flushdns
 if /I "%userchoice%" == "A" (
-	timeout /t 5
-	goto updates
+  timeout /t 5
+  goto updates
 ) else (
-	timeout /t -1
-	goto home
+  timeout /t -1
+  goto home
 )
 :updates
 cls
@@ -310,11 +310,11 @@ wusa /uninstall /kb:971033 /quiet /norestart
 echo Uninstalling KB4493132: Windows 7 End of Support nagware.
 wusa /uninstall /kb:4493132 /quiet /norestart
 if /I "%userchoice%" == "A" (
-	timeout /t 5
-	goto end
+  timeout /t 5
+  goto end
 ) else (
-	timeout /t -1
-	goto restart
+  timeout /t -1
+  goto restart
 )
 :restart
 cls
