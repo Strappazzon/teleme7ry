@@ -3,6 +3,7 @@
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
 		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
 		"files.autoGuessEncoding": false,
 		"files.encoding": "cp437"
 	},
