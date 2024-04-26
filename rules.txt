@@ -20,7 +20,7 @@
 0.0.0.0 watson.ppe.telemetry.microsoft.com
 0.0.0.0 telemetry.appex.bing.net
 0.0.0.0 telemetry.urs.microsoft.com
-0.0.0.0 telemetry.appex.bing.net:443
+0.0.0.0 telemetry.appex.bing.net
 0.0.0.0 settings-sandbox.data.microsoft.com
 0.0.0.0 vortex-sandbox.data.microsoft.com
 0.0.0.0 survey.watson.microsoft.com
