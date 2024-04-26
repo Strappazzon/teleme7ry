@@ -5,6 +5,14 @@ layout: home
 <!-- markdownlint-disable-next-line MD041 -->
 {% include header.html %}
 
+<!-- markdownlint-disable-next-line MD045 -->
+> ### ![](./assets/img/ico/exclamation.png) IMPORTANT
+>
+> Teleme7ry has reached End of Life on April 26th, 2024. It no longer receives new features, updates, or fixes. However, it is still available for download.
+>
+> I strongly recommend to upgrade to a [supported Windows version](https://learn.microsoft.com/en-us/windows/release-health/supported-versions-windows-client)
+> and use alternative scripts, or switch to a [Linux distribution](https://distrowatch.com/).
+
 ## About
 
 This batch script will remove telemetry and nagware-related Tasks, Services and Updates.
