@@ -2,7 +2,10 @@
 **/working
 
 # Jekyll
-**/_site/
-**/.sass-cache/
-**/.jekyll-cache/
-**/.jekyll-metadata
+**/_site*
+**/.jekyll-cache
+
+# VS Code
+.vscode/**
+!.vscode/extensions.json
+!.vscode/settings.json

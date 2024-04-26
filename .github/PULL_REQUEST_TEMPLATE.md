@@ -1,13 +1,18 @@
-<!-- PLEASE READ TELEME7RY CODE OF CONDUCT (https://github.com/Strappazzon/teleme7ry/blob/master/.github/CODE_OF_CONDUCT.md) AND CONTRIBUTING GUIDELINES (https://github.com/Strappazzon/teleme7ry/blob/master/.github/CONTRIBUTING.md) BEFORE SUBMITTING A PULL REQUEST -->
+# Description
 
-## Description
+<!--
+  Replace "#none" with a link to the Issue closed/fixed by this Pull Request.
+  Remove the line if not applicable.
+-->
+Closes: #none
 
-Fixes: #none <!-- A link to the issue fixed by this pull request. -->
+<!-- Describe your Pull Request -->
 
-<!-- Describe your Pull request below -->
+## Check list
 
-### Check list
-<!-- Please add an x in each box below, like so: [x] -->
+<!--
+  Add an x in the box below.
+  Example: [x] Lorem ipsum.
+-->
 
-* [ ] I have read and understand the [guidelines for contributing](https://github.com/Strappazzon/teleme7ry/blob/master/.github/CONTRIBUTING.md) to this repository
-* [ ] If this PR fixes any issues, I have added "Fixes `#issue`" to the PR description or my commit messages
+- [ ] If this PR closes a ticket or fixes any issue, I added "Closes `#issue`" to the description or my commit message.

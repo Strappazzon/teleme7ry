@@ -1,15 +1,31 @@
+# Website
 baseurl: "/teleme7ry"
+title: "Teleme7ry"
+description: "Disable telemetry in Windows 7"
+
+# Custom directories
+includes_dir: _components
+layouts_dir: _templates
+
+# Excluded files, folders
+exclude:
+  - README.md
 
 # Markdown
 markdown: kramdown
+
+# Kramdown
+# See: https://kramdown.gettalong.org/options.html
 kramdown:
   html_to_native: true
+  input: GFM
+  # Disable smart quotes
+  smart_quotes: "apos,apos,quot,quot"
+  syntax_highlighter: rouge
+  # See: https://rouge-ruby.github.io/docs/#configuration
+  syntax_highlighter_opts: {}
 
 # CSS
 sass:
-  sass_dir: "static/css"
+  sourcemap: development
   style: compressed
-
-# Excluded files
-exclude:
-  - README.md

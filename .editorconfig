@@ -11,9 +11,15 @@ trim_trailing_whitespace = true
 [*.bat]
 charset = unset
 
-[*.json]
+[*.{html,json}]
 indent_style = tab
 tab_width = 4
 
 [*.md]
 trim_trailing_whitespace = false
+
+[*.{html,md,scss,yml}]
+end_of_line = lf
+
+[{.ruby-version,Gemfile}]
+end_of_line = lf

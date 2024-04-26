@@ -1,3 +1,15 @@
 * text=auto eol=crlf
 
+*.html           text eol=lf
+*.md             text eol=lf
+*.scss           text eol=lf
+*.yml            text eol=lf
+**/.ruby-version text eol=lf
+**/Gemfile*      text eol=lf
+
 *.png binary
+
+# GitHub language statistics
+# See: https://github.com/github/linguist/blob/master/docs/overrides.md
+**/vendor?(s)/**      linguist-vendored=true
+**/vendor?(s).?(s)css linguist-vendored=true

@@ -1,0 +1,52 @@
+/// ANIMATIONS
+
+@keyframes anim-blink {
+  0%   { color: #ccc }
+  47%  { color: #fff }
+  50%  { color: #0000aa }
+  97%  { color: #0000aa }
+  100% { color: #fff }
+}
+
+/// COMMON
+
+::selection {
+  color: #0000aa;
+  background-color: #fff;
+}
+
+body {
+  padding: 2rem;
+  font-family: 'Lucida Console', monospace;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0000aa;
+}
+
+.container {
+  &__error {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    &-header {
+      color: #0000aa;
+      background-color: rgba(255, 255, 255, 0.7);
+      font-weight: 700;
+      padding: 1px 5px;
+      margin-bottom: 0.825rem;
+    }
+    &-content {
+      a {
+        color: currentColor;
+        text-decoration: none;
+        &:after {
+          content: '_';
+          animation: anim-blink 2s linear 0s infinite;
+        }
+      }
+    }
+  }
+}

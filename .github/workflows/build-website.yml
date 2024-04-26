@@ -1,0 +1,61 @@
+name: Build Website
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "docs/**"
+      - "!docs/README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build Website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4.1.1
+
+      - name: Setup Ruby
+        env:
+          BUNDLE_SPECIFIC_PLATFORM: 1
+        uses: ruby/setup-ruby@v1.173.0
+        with:
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5.0.0
+
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: |
+          cd docs
+          bundle exec jekyll build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+        with:
+          path: docs/_site
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4.0.5
