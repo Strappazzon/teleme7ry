@@ -1,0 +1,32 @@
+{
+	"[bat]": {
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": true,
+		"files.autoGuessEncoding": false,
+		"files.encoding": "cp437"
+	},
+	"[json][jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
+	"[scminput]": {
+		"editor.rulers": [
+			70
+		]
+	},
+	"editor.defaultFormatter": null,
+	"editor.detectIndentation": false,
+	"editor.rulers": [],
+	"files.readonlyInclude": {
+		"**/LICENSE*": true
+	},
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"git.inputValidation": true,
+	"git.inputValidationLength": 70,
+	"git.inputValidationSubjectLength": 70
+}
