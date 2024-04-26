@@ -7,6 +7,12 @@
 		"files.autoGuessEncoding": false,
 		"files.encoding": "cp437"
 	},
+	"[html][liquid]": {
+		"editor.defaultFormatter": null,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"files.eol": "\n"
+	},
 	"[json][jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features",
 		"editor.formatOnPaste": true,
@@ -26,15 +32,38 @@
 		"files.eol": "\n",
 		"files.trimTrailingWhitespace": false
 	},
+	"[plaintext][txt]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"files.insertFinalNewline": false,
+		"files.trimTrailingWhitespace": false
+	},
 	"[scminput]": {
 		"editor.rulers": [
 			70
 		]
 	},
+	"[scss]": {
+		"editor.defaultFormatter": null,
+		"editor.insertSpaces": true,
+		"editor.rulers": [
+			160
+		],
+		"editor.tabSize": 2,
+		"files.eol": "\n"
+	},
 	"editor.defaultFormatter": null,
 	"editor.detectIndentation": false,
 	"editor.rulers": [],
+	"files.associations": {
+		"*.html": "liquid"
+	},
+	"files.exclude": {
+		".jekyll-cache": true,
+		"docs/_site*": true
+	},
 	"files.readonlyInclude": {
+		"**/Gemfile.lock": true,
 		"**/LICENSE*": true
 	},
 	"files.trimFinalNewlines": true,
@@ -42,6 +71,9 @@
 	"git.inputValidation": true,
 	"git.inputValidationLength": 70,
 	"git.inputValidationSubjectLength": 70,
+	"liquid.config.method": "workspace",
+	"liquid.engine": "jekyll",
 	"markdown.validate.enabled": true,
-	"markdown.validate.referenceLinks.enabled": "ignore"
+	"markdown.validate.referenceLinks.enabled": "ignore",
+	"scss.validate": false
 }

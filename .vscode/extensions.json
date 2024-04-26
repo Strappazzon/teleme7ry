@@ -1,6 +1,11 @@
 {
 	"recommendations": [
-		"editorconfig.editorconfig",
-		"DavidAnson.vscode-markdownlint"
+		"DavidAnson.vscode-markdownlint",
+		"EditorConfig.EditorConfig",
+		"sissel.shopify-liquid"
+	],
+	"unwantedRecommendations": [
+		"rebornix.ruby",
+		"wingrunr21.vscode-ruby"
 	]
 }

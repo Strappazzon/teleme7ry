@@ -28,6 +28,9 @@ hr-style:
 # Line length
 line-length: false
 
+# Allow duplicate headings
+no-duplicate-heading: false
+
 # Allow HTML elements
 no-inline-html: false
 
