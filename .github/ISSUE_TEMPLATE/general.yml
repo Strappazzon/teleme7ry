@@ -1,0 +1,20 @@
+name: Other Issue
+description: Issue not related to bugs.
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a description.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: coc
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to the [Code of Conduct](https://github.com/Strappazzon/.github/blob/-/CODE_OF_CONDUCT.md).
+      options:
+        - label: I agree to follow the Code of Conduct.
+          required: true
