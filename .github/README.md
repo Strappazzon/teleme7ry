@@ -46,24 +46,24 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
   - A system restore point with the name "**Teleme7ry vX.Y**" will be created
     - Make sure that System Restore is enabled otherwise the task will fail
 - 2\. **Stop and delete telemetry services**
-  - Telemetry services will be stopped and deleted.
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services).
+  - Telemetry services will be stopped and deleted
+    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services)
 - 3\. **Delete telemetry and nagware tasks**
-  - Telemetry and nagware tasks will be deleted.
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks).
+  - Telemetry and nagware tasks will be deleted
+    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks)
 - 4\. **Block telemetry domains and IPs**
-  - Teleme7ry rules will be merged with the hosts file.
-    You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt).
+  - Teleme7ry rules will be merged with the hosts file
+    You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt)
   - Duplicate lines inside the hosts file, if any, will be removed
-    (due to limitations, this includes hosts entries that have nothing to do with telemetry).
+    (due to limitations, this includes hosts entries that have nothing to do with telemetry)
 - 5\. **Uninstall telemetry and nagware updates**
-  - Telemetry and Nagware updates will be uninstalled.
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates).
-  - Your computer will be restarted aftwerwards.
+  - Telemetry and Nagware updates will be uninstalled
+    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates)
+  - Your computer will be restarted aftwerwards
 - A *(case insensitive)* **Automatic mode: Perform all of the above tasks**
-  - The script will go through every task above, in order.
+  - The script will go through every task above, in order
 - Q *(case insensitive)* **Quit**
-  - The script will quit without making any change to the system.
+  - The script will quit without making any change to the system
 
 > [!WARNING]
 >
