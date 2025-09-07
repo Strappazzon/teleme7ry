@@ -1,10 +1,6 @@
 # Teleme7ry
 **/working
 
-# Jekyll
-**/_site*
-**/.jekyll-cache
-
 # VS Code
 .vscode/**
 !.vscode/extensions.json
