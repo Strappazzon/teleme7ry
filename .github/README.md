@@ -1,6 +1,6 @@
 <!-- markdownlint-disable-next-line MD041 -->
 <div align="center">
-  <img width="128" src="../docs/assets/img/favicon.png" alt="Logo">
+  <img width="128" src="https://strappazzon.xyz/projects/teleme7ry/assets/img/favicon.png" alt="Logo">
 </div>
 
 <div align="center">
@@ -38,7 +38,7 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 - Run **teleme7ry.bat** with elevated privileges
   - Teleme7ry will run some checks and if they are successful you will be presented with this display:
 
-![Teleme7ry](../docs/assets/img/screenshot/ss_main.png)
+![Teleme7ry](https://strappazzon.xyz/projects/teleme7ry/assets/img/screenshot/main.png)
 
 ### Tasks
 
@@ -47,18 +47,18 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
     - Make sure that System Restore is enabled otherwise the task will fail
 - 2\. **Stop and delete telemetry services**
   - Telemetry services will be stopped and deleted
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services)
+    You can see the [full list here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-Services)
 - 3\. **Delete telemetry and nagware tasks**
   - Telemetry and nagware tasks will be deleted
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks)
+    You can see the [full list here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-nagware-Tasks)
 - 4\. **Block telemetry domains and IPs**
   - Teleme7ry rules will be merged with the hosts file
-    You can see all the rules [here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt)
+    You can see [all the rules here](https://github.com/Strappazzon/teleme7ry/blob/master/rules.txt)
   - Duplicate lines inside the hosts file, if any, will be removed
     (due to limitations, this includes hosts entries that have nothing to do with telemetry)
 - 5\. **Uninstall telemetry and nagware updates**
   - Telemetry and Nagware updates will be uninstalled
-    You can see the full list [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates)
+    You can see the [full list here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates)
   - Your computer will be restarted aftwerwards
 - A *(case insensitive)* **Automatic mode: Perform all of the above tasks**
   - The script will go through every task above, in order
@@ -70,9 +70,9 @@ For more details refer to [the Wiki](https://github.com/Strappazzon/teleme7ry/wi
 > Remember to hide the updates uninstalled by Teleme7ry.
 >
 > Open the Control Panel and navigate to **System and Security** > **Windows Update** > **Check for Updates** and hide all the
-> updates listed [here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates), both under **Important** and **Optional**.
+> [updates listed here](https://github.com/Strappazzon/teleme7ry/wiki/Telemetry-and-Nagware-Updates), both under **Important** and **Optional**.
 >
-> ![Hide Updates](../docs/assets/img/screenshot/ss_updates.png)
+> ![Hide Updates](https://strappazzon.xyz/projects/teleme7ry/assets/img/screenshot/updates.png)
 
 ## Credits
 
